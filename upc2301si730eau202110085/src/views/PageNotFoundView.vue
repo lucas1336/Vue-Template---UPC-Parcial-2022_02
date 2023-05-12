@@ -1,5 +1,12 @@
 <template>
-  <div class="main">
+  <div class="div-format">
+    <h1>Page Not Found</h1>
+    <p>You tried to access: {{ $route.path }}</p>
+    <router-link to="/home">
+      <pv-button>Go back home</pv-button>
+    </router-link>
+  </div>
+  <div class="main" aria-label="Image description">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -127,6 +134,10 @@ export default {
 </script>
 
 <style scoped>
+.div-format {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 20px;
+}
 .fundo {
   animation: scales 3s alternate infinite;
   transform-origin: center;

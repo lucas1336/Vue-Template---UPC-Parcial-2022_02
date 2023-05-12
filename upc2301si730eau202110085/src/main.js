@@ -11,6 +11,10 @@ import PrimeVue from 'primevue/config'
 import SplitButton from 'primevue/splitbutton'
 import Toolbar from 'primevue/toolbar'
 import Card from 'primevue/card'
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column'
+import ColumnGroup from 'primevue/columngroup'
+import Row from 'primevue/row'
 
 import ToastService from 'primevue/toastservice'
 import Toast from 'primevue/toast'
@@ -22,14 +26,18 @@ import i18n from './locales/i18n'
 
 const app = createApp(App)
 
-app.component('Button', Button)
-app.component('InputText', InputText)
-app.component('Checkbox', Checkbox)
-app.component('Dropdown', Dropdown)
-app.component('SplitButton', SplitButton)
-app.component('Toolbar', Toolbar)
-app.component('Toast', Toast)
-app.component('Card', Card)
+app.component('pv-button', Button)
+app.component('pv-inputText', InputText)
+app.component('pv-checkbox', Checkbox)
+app.component('pv-dropdown', Dropdown)
+app.component('pv-splitButton', SplitButton)
+app.component('pv-toolbar', Toolbar)
+app.component('pv-toast', Toast)
+app.component('pv-card', Card)
+app.component('pv-dataTable', DataTable)
+app.component('pv-column', Column)
+app.component('pv-columnGroup', ColumnGroup)
+app.component('pv-row', Row)
 
 app.use(ToastService)
 app.use(router)

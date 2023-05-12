@@ -1,10 +1,10 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import ToolbarComponent from './components/ToolbarComponent.vue'
+import ToolbarComponent from './components/shared/ToolbarComponent.vue'
 </script>
 
 <template>
-  <Toast />
+  <pv-toast />
   <ToolbarComponent />
   <RouterView />
 </template>
